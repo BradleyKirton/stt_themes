@@ -1,0 +1,423 @@
+{
+    "name": "Gruber Darker",
+    "author": "Ported from https://github.com/franciscosilva00/gruber-darker-theme-vscode with vscode-theme-to-sublime-text",
+    "variables":
+    {
+        "black": "#000000",
+        "black2": "#181818",
+        "blue": "#96a6c8",
+        "cyan": "#95a99f",
+        "green": "#73c936",
+        "grey": "#52494e",
+        "orange": "#cc8c3c",
+        "red": "#ff0000",
+        "white": "#e4e4ef",
+        "yellow": "#ffdd33"
+    },
+    "globals":
+    {
+        "foreground": "var(white)",
+        "background": "var(black2)",
+        "caret": "var(white)",
+        "line_highlight": "var(black)",
+        "selection": "var(grey)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Constant Character",
+            "scope": "constant.character",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Constant Character Escape",
+            "scope": "constant.character.escape",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Constant Language",
+            "scope": "constant.language",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "[RUBY] Constant Language",
+            "scope": "constant.language.boolean.ruby, constant.language.symbol.ruby, punctuation.definition.constant.ruby",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "[PYTHON] Constant Language",
+            "scope": "constant.language.python",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Constant Numeric",
+            "scope": "constant.numeric",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Constant Regexp",
+            "scope": "constant.regexp",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Variable Language This",
+            "scope": "variable.language.this",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "[C++] Variable Language This",
+            "scope": "variable.language.this.cpp",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Keyword Operator",
+            "scope": "keyword.operator",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Keyword Operator",
+            "scope": "keyword.operator.sizeof",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Keyword Operator Cast",
+            "scope": "keyword.operator.cast",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Keyword Operator New",
+            "scope": "keyword.operator.new",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Keyword Operator Assignment",
+            "scope": "keyword.operator.assignment",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Keyword Control Directive",
+            "scope": "keyword.control.directive",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Keyword Unit Suffix",
+            "scope": "keyword.other.unit",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Meta Preprocessor",
+            "scope": "meta.preprocessor",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Punctuation Definition Parameters",
+            "scope": "punctuation.definition.method-parameters, punctuation.definition.function-parameters, punctuation.definition.parameters",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Punctuation Definition Tag",
+            "scope": "punctuation.definition.tag",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Punctuation Definition Comment",
+            "scope": "punctuation.definition.comment, punctuation.end.definition.comment, punctuation.start.definition.comment",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Punctuation Section",
+            "scope": "punctuation.section",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Punctuation Include",
+            "scope": "punctuation.definition.directive",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Punctuation String",
+            "scope": "punctuation.definition.string",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "[PYTHON] Storage Types",
+            "scope": "storage.type.function.python, storage.type.function.lambda.python",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage Namespace Definition and Directive",
+            "scope": "storage.type.namespace.definition, storage.type.namespace.directive",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage Type Template",
+            "scope": "storage.type.template",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage Class",
+            "scope": "storage.type.class",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage Modifier Pointer",
+            "scope": "storage.modifier",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Storage Modifier, Specifier",
+            "scope": "storage.modifier.const, storage.modifier.specifier.const, storage.modifier.specifier.extern, storage.modifier.specifier.register, storage.modifier.specifier.volatile",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage Modifier, Specifier Static",
+            "scope": "storage.modifier.static, storage.modifier.specifier.static",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage Type",
+            "scope": "storage.type.struct, storage.type.union, storage.type.enum, storage.modifier.union",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "String Regexp",
+            "scope": "string.regexp",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Entity",
+            "scope": "entity",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Scope Resolution",
+            "scope": "entity.name.scope-resolution",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "[HS] Entity Namespace",
+            "scope": "entity.name.namespace.haskell",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Entity Name Function Call",
+            "scope": "entity.name.function.call",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Entity Name Type",
+            "scope": "entity.name.type",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Entity Name Variable",
+            "scope": "entity.name.variable",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Entity Name Type Parameter",
+            "scope": "entity.name.type.parameter",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Entity Name Function Operator",
+            "scope": "entity.name.function.operator",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Entity Function Templated",
+            "scope": "entity.name.function.templated",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Entity Name Class",
+            "scope": "entity.name.type.class",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Entity Type Alias",
+            "scope": "entity.name.type.alias",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Entity Function Member",
+            "scope": "entity.name.function.member",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Preprocessor Function Name and Macro",
+            "scope": "entity.name.function.preprocessor, meta.preprocessor.macro",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Support Built-In Posix Reserved",
+            "scope": "support.type.posix-reserved",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Support Class",
+            "scope": "support.class",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "[RUBY] Support Class",
+            "scope": "support.class.ruby",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Support Constant",
+            "scope": "support.constant",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Support Function",
+            "scope": "support.function",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Support Function Construct",
+            "scope": "support.function.construct",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "[HTML] Tag Punctuation",
+            "scope": "punctuation.definition.tag",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "[HTML] Entity Name Tags",
+            "scope": "entity.name.tag.html",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "[HTML] [CSS] Attribute Name",
+            "scope": "entity.other.attribute-name.html, entity.other.attribute-name.css",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "[CSS] Entity Class and Tag",
+            "scope": "entity.name.tag.css, entity.other.attribute-name.class.css",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "[CSS] Support Type Property Name",
+            "scope": "support.type.property-name.css",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "[CSS] Attribute Name Pseudo Class",
+            "scope": "entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "URL",
+            "scope": "*url*, *link*, *uri*",
+            "foreground": "var(blue)",
+            "font_style": "underline"
+        },
+        {
+            "name": "JSON Key - Level 0",
+            "scope": "source.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "JSON Key - Level 1",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "JSON Key - Level 2",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JSON Key - Level 3",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JSON Key - Level 4",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JSON Key - Level 5",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JSON Key - Level 6",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JSON Key - Level 7",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JSON Key - Level 8",
+            "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "[MD] Headings",
+            "scope": "entity.name.section.markdown, punctuation.definition.heading.markdown",
+            "foreground": "var(yellow)",
+            "font_style": "bold"
+        },
+        {
+            "name": "[MD] Paragraphs",
+            "scope": "meta.paragraph.markdown",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "[MD] Links",
+            "scope": "markup.underline.link.markdown, markup.underline.link.image.markdown",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "[MD] Punctuation",
+            "scope": "punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown",
+            "foreground": "var(white)"
+        }
+    ]
+}

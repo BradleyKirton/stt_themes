@@ -1,0 +1,80 @@
+{
+    "name": "pustota",
+    "author": "Ported from https://github.com/sobolevn/pustota with vscode-theme-to-sublime-text",
+    "variables":
+    {
+        "black": "#00010a",
+        "black2": "#0a0e14",
+        "blue": "#59c2ff",
+        "blue2": "#273747",
+        "grey": "#626a73",
+        "grey2": "#b3b1ad",
+        "orange": "#ffb454",
+        "orange2": "#e6b450",
+        "orange3": "#ff8f40",
+        "yellow": "#c2d94c"
+    },
+    "globals":
+    {
+        "foreground": "var(grey2)",
+        "background": "var(black2)",
+        "caret": "var(grey2)",
+        "line_highlight": "var(black)",
+        "selection": "var(blue2)"
+    },
+    "rules":
+    [
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class, source.go storage.type",
+            "foreground": "var(orange2)"
+        },
+        {
+            "name": "Language variable",
+            "scope": "variable.language",
+            "font_style": "italic",
+            "foreground": "var(orange3)"
+        },
+        {
+            "scope": "comment, comment.block.documentation storage.type.class, comment.block.documentation storage.type, comment.block.documentation storage, comment.block.documentation keyword.other",
+            "foreground": "var(grey)",
+            "font_style": "italic"
+        },
+        {
+            "scope": "string, constant.other.symbol, constant.character.escape, string.quoted invalid.illegal.newline, markup.quote meta.paragraph",
+            "foreground": "var(yellow)"
+        },
+        {
+            "scope": "constant.numeric, constant.language, support.constant, constant.other.color, string.unquoted.html",
+            "foreground": "var(orange2)"
+        },
+        {
+            "scope": "keyword, keyword.operator, storage.modifier, support.macro, storage.type.function, storage.type.class, punctuation.definition.decorator, punctuation.definition.annotation, punctuation.decorator, punctuation.separator.continuation.line, punctuation.separator.annotation.result, constant.character.escape.line-continuation.c, storage.type.struct.c, meta.method.declaration storage.type, meta.var.expr storage.type, meta.interface storage.type.interface, meta.type.declaration storage.type.type, punctuation.definition.attribute, punctuation.brackets.attribute, storage.type.rust, punctuation.separator.other.ruby, storage.type.function-type.lisp, punctuation.definition.storage.type.objc, punctuation.definition.keyword.objc, storage.type.alias.shell, entity.name.section.markdown, punctuation.definition.tag.begin, punctuation.definition.tag.end, source.toml support.type.property-name.table, source.toml support.type.property-name.array, entity.name.section.group-title, support.function.target.PHONY",
+            "foreground": "var(orange3)"
+        },
+        {
+            "scope": "meta.definition entity.name.function, meta.definition support.function, meta.function.definition entity.name.function, meta.function.python entity.name.function, meta.function.python support.function, meta.function.python support.variable, meta.function.python variable.legacy, meta.macro.rules entity.name.function.macro.rust, meta.function.method entity.name.function, meta.function.php entity.name.function, entity.name.function.go, meta.function.type-declaration entity.name.function, meta.at-rule entity.name.function, meta.at-rule support.function, meta.function entity.name.function.shell, entity.name.function.lisp, meta.function entity.name.function.objc, meta.function entity.name.function.name-of-parameter.objc, markup.inline.raw.string, entity.other.attribute-name, entity.name.function.target.makefile",
+            "foreground": "var(orange)"
+        },
+        {
+            "scope": "meta.class entity.name.type, entity.name.type.struct, entity.name.type.trait, support.class.dart, meta.module entity.name.type.module, meta.declaration storage.type.haskell, meta.type.declaration entity.name.type.alias, meta.interface entity.name.type.interface, entity.name.type.lisp, meta.interface-or-protocol entity.name.type.objc, entity.name.tag.css, meta.link.inline string.other.link.title, meta.image.inline string.other.link.description",
+            "foreground": "var(blue)"
+        },
+        {
+            "scope": "storage.modifier.import, storage.modifier.package, entity.name.type.package, entity.name.function.support, entity.name.function.decorator, meta.function.decorator support.type, invalid, keyword.operator.key-value, keyword.operator.access.dot, keyword.operator.namespace, string.template meta.template, meta.type.annotation entity.name.type, meta.return.type entity.name.type, meta.type.parameters entity.name.type, keyword.operator.type.annotation.ts, support.type.property-name, entity.name.tag.yaml, string.quoted.double.attribute-value, constant.language.symbol, constant.other.symbol.hashkey, meta.method-call.static keyword.operator, keyword.operator.return-value.php, keyword.operator.class.php, keyword.constant.lisp, source.objc keyword.other.property, source.editorconfig keyword.other.definition, source.ini punctuation.definition.entity, keyword.other.definition.ini, string.unquoted.argument.shell, string.interpolated.dollar.shell, source.shell string.unquoted.argument",
+            "foreground": "var(grey2)"
+        },
+        {
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "scope": "markup.strikethrough",
+            "font_style": "strikethrough"
+        }
+    ]
+}
